@@ -60,7 +60,7 @@ public class TestBookFlights {
                 searchBtn.click();
                 String title = driver.getTitle();
                 Assert.assertTrue(title.contains("transport"));
-                WebElement searchSummary = driver.findElement(By.cssSelector("#flights-search-summary-root"))
+                WebElement searchSummary = driver.findElement(By.cssSelector("#flights-search-summary-root"));
 //                Assert.assertThat(isDisplayed, searchSummary);
                 driver.wait(2000);
             }
